@@ -1,0 +1,16 @@
+# Build output
+target/
+out/
+*.class
+
+# IntelliJ (each member imports the Maven project themselves)
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Secrets: API keys live here and never go to GitHub.
+# Copy config.example.properties to config.properties and fill in your keys.
+config.properties

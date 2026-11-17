@@ -1,0 +1,61 @@
+@startuml architecture
+' Clean Architecture layers for NorthWatch. Arrows are source-code dependencies;
+' every arrow points inward. Each member adds their own classes in their own packages.
+
+skinparam packageStyle rectangle
+skinparam shadowing false
+
+package "Frameworks & drivers" {
+  package view {
+    class WatchlistView
+    class FloodRiskView
+    class FireMapView
+    class ImageCompareView
+  }
+  package data_access {
+    class DemoCommunityProvider
+    class ApiConfig
+    class "API data access objects" as DAOs
+  }
+  package app {
+    class Main
+    class AppBuilder
+  }
+}
+
+package "Interface adapters" {
+  package interface_adapter {
+    class "ViewModel<T>" as ViewModel
+    class "Controller / Presenter / State\n(one sub-package per story)" as Adapters
+  }
+}
+
+package "Application business rules" {
+  package use_case {
+    interface CommunityProvider
+    class "InputBoundary / Interactor / OutputBoundary\nInputData / OutputData / DataAccessInterface\n(one sub-package per story)" as UseCases
+  }
+}
+
+package "Enterprise business rules" {
+  package entity {
+    class Community
+    class BoundingBox
+    enum Hazard
+    enum RiskLevel
+    class RiskFactor
+    class RiskAssessment
+    interface "RiskModel<T>" as RiskModel
+  }
+}
+
+view --> interface_adapter
+interface_adapter --> use_case
+data_access ..|> use_case : implements\ndata access interfaces
+use_case --> entity
+DemoCommunityProvider ..|> CommunityProvider
+AppBuilder --> view
+AppBuilder --> interface_adapter
+AppBuilder --> use_case
+AppBuilder --> data_access
+@enduml
