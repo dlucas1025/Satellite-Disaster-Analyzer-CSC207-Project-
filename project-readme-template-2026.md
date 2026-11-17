@@ -26,9 +26,9 @@
 
 ### User Story 2
 
-### User Story 3
+### User Story 3: As a rural resident, I want to see active wildfires near my community on a map, how far away the nearest one is, and whether the wind is blowing it toward us so that I know whether to prepare to leave.
 
-(Add additional user stories as needed.)
+### User Story 4
 
 ---
 
