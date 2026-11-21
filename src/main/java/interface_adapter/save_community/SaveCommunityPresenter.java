@@ -24,8 +24,8 @@ public class SaveCommunityPresenter implements SaveCommunityOutputBoundary {
     public void prepareSearchResults(SaveCommunityOutputData output) {
         final SaveCommunityState state = viewModel.getState();
         state.setSearchResults(output.searchResults());
+        state.setMessage(messageOrBlank(output));
         state.setError("");
-        // TODO Shreyas: format "name, province" labels if the view needs them
         viewModel.firePropertyChange();
     }
 
@@ -33,7 +33,7 @@ public class SaveCommunityPresenter implements SaveCommunityOutputBoundary {
     public void prepareWatchlistView(SaveCommunityOutputData output) {
         final SaveCommunityState state = viewModel.getState();
         state.setWatchlist(output.watchlist());
-        state.setMessage(output.message() == null ? "" : output.message());
+        state.setMessage(messageOrBlank(output));
         state.setError("");
         viewModel.firePropertyChange();
     }
@@ -42,5 +42,12 @@ public class SaveCommunityPresenter implements SaveCommunityOutputBoundary {
     public void prepareFailView(String error) {
         viewModel.getState().setError(error);
         viewModel.firePropertyChange();
+    }
+
+    private static String messageOrBlank(SaveCommunityOutputData output) {
+        if (output.message() == null) {
+            return "";
+        }
+        return output.message();
     }
 }
