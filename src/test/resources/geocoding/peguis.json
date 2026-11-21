@@ -1,0 +1,39 @@
+{
+  "results": [
+    {
+      "id": 6100832,
+      "name": "Peguis",
+      "latitude": 50.08337,
+      "longitude": -96.95028,
+      "elevation": 229.0,
+      "feature_code": "PPL",
+      "country_code": "CA",
+      "admin1_id": 6065171,
+      "country_id": 6251999,
+      "country": "Canada",
+      "admin1": "Manitoba",
+      "admin2": "St. Andrews"
+    },
+    {
+      "id": 9999001,
+      "name": "Peguis",
+      "latitude": 51.33,
+      "longitude": -97.57,
+      "feature_code": "PPL",
+      "country_code": "CA",
+      "country": "Canada",
+      "admin1": "Manitoba"
+    },
+    {
+      "id": 9999002,
+      "name": "Peguis Lake",
+      "latitude": 45.0,
+      "longitude": -93.0,
+      "feature_code": "LK",
+      "country_code": "US",
+      "country": "United States",
+      "admin1": "Minnesota"
+    }
+  ],
+  "generationtime_ms": 0.7
+}
