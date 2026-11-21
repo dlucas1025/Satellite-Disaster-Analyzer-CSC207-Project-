@@ -3,7 +3,7 @@ package use_case.nearby_fires;
 import java.time.LocalDate;
 
 /**
- * A request to check for nearby fires. Owner: Member C.
+ * A request to check for nearby fires. Owner: Hamza.
  *
  * @param communityId the community
  * @param radiusKm    search radius, default 100

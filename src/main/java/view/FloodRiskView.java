@@ -19,7 +19,7 @@ import interface_adapter.flood_risk.FloodRiskController;
 import interface_adapter.flood_risk.FloodRiskState;
 
 /**
- * Flood rating, reasons and flow chart. Owner: Member B.
+ * Flood rating, reasons and flow chart. Owner: Lucas.
  */
 public class FloodRiskView extends JPanel implements PropertyChangeListener {
 
@@ -43,19 +43,19 @@ public class FloodRiskView extends JPanel implements PropertyChangeListener {
         final JPanel top = new JPanel();
         top.add(new JLabel("Community:"));
         top.add(communityBox);
-        // TODO Member B: add an "as of" date picker (e.g. a JSpinner with a date model)
+        // TODO Lucas: add an "as of" date picker (e.g. a JSpinner with a date model)
         top.add(assessButton);
 
         final JPanel centre = new JPanel(new BorderLayout());
         centre.add(levelLabel, BorderLayout.NORTH);
         centre.add(new JScrollPane(new JList<>(reasonsModel)), BorderLayout.CENTER);
-        // TODO Member B: JFreeChart ChartPanel of forecast flow vs usual flow, BorderLayout.SOUTH
+        // TODO Lucas: JFreeChart ChartPanel of forecast flow vs usual flow, BorderLayout.SOUTH
 
         add(top, BorderLayout.NORTH);
         add(centre, BorderLayout.CENTER);
         add(messageLabel, BorderLayout.SOUTH);
 
-        // TODO Member B: run the controller in a SwingWorker so API calls never freeze the window
+        // TODO Lucas: run the controller in a SwingWorker so API calls never freeze the window
         assessButton.addActionListener(event -> {
             if (controller != null && communityBox.getSelectedItem() != null) {
                 controller.execute((String) communityBox.getSelectedItem(), null);

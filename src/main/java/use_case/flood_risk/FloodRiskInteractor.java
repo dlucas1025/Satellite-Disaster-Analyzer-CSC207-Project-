@@ -8,7 +8,7 @@ import entity.risk.RiskModel;
 import use_case.shared.CommunityProvider;
 
 /**
- * Rates flood risk for the next 7 days. Owner: Member B.
+ * Rates flood risk for the next 7 days. Owner: Lucas.
  */
 public class FloodRiskInteractor implements FloodRiskInputBoundary {
 
@@ -49,7 +49,7 @@ public class FloodRiskInteractor implements FloodRiskInputBoundary {
             presenter.prepareFailView("Unknown community: " + input.communityId());
             return;
         }
-        // TODO Member B:
+        // TODO Lucas:
         //  1. date = input.asOf() or today
         //  2. find nearest gauge; query flow at the gauge's position if there is one
         //  3. get forecast, history, weather, recent readings (catch DataUnavailableException -> fail view)

@@ -5,7 +5,7 @@ import use_case.compare_imagery.CompareImageryOutputBoundary;
 import use_case.compare_imagery.CompareImageryOutputData;
 
 /**
- * Formats the comparison for display. Owner: Member D.
+ * Formats the comparison for display. Owner: Youssef.
  */
 public class CompareImageryPresenter implements CompareImageryOutputBoundary {
 
@@ -24,7 +24,7 @@ public class CompareImageryPresenter implements CompareImageryOutputBoundary {
     public void prepareSuccessView(CompareImageryOutputData output) {
         final CompareImageryState state = viewModel.getState();
         state.setError("");
-        // TODO Member D: copy pixels and size; captions like "2 May 2022: 14% water (mostly cloud!)";
+        // TODO Youssef: copy pixels and size; captions like "2 May 2022: 14% water (mostly cloud!)";
         //  summary like "Water cover rose from 3% to 14%"
         viewModel.firePropertyChange();
     }

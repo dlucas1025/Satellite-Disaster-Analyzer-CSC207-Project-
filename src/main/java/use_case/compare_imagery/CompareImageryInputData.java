@@ -5,7 +5,7 @@ import java.time.LocalDate;
 import entity.Hazard;
 
 /**
- * A request to compare two pictures. Owner: Member D.
+ * A request to compare two pictures. Owner: Youssef.
  *
  * @param communityId the community
  * @param hazard      FLOOD (water) or WILDFIRE (burned land)

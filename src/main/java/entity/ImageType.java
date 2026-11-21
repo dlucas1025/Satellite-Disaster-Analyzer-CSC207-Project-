@@ -1,7 +1,7 @@
 package entity;
 
 /**
- * Kinds of satellite picture. Owner: Member D.
+ * Kinds of satellite picture. Owner: Youssef.
  */
 public enum ImageType {
     /** What the eye would see. */

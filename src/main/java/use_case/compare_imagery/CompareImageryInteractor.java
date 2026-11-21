@@ -9,7 +9,7 @@ import entity.risk.LandClassifier;
 import use_case.shared.CommunityProvider;
 
 /**
- * Compares satellite pictures from two dates. Owner: Member D.
+ * Compares satellite pictures from two dates. Owner: Youssef.
  */
 public class CompareImageryInteractor implements CompareImageryInputBoundary {
 
@@ -52,7 +52,7 @@ public class CompareImageryInteractor implements CompareImageryInputBoundary {
             presenter.prepareFailView("No classifier for " + input.hazard());
             return;
         }
-        // TODO Member D:
+        // TODO Youssef:
         //  1. check before < after
         //  2. area = community.areaAround(AREA_RADIUS_KM); fetch both pictures of classifier.imageType()
         //  3. fractions with image.affectedFraction(classifier); reliable if unusableFraction <= MAX_UNUSABLE

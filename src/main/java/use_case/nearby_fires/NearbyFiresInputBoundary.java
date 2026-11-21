@@ -1,7 +1,7 @@
 package use_case.nearby_fires;
 
 /**
- * Entry point for story 3. Owner: Member C.
+ * Entry point for story 3. Owner: Hamza.
  */
 public interface NearbyFiresInputBoundary {
 

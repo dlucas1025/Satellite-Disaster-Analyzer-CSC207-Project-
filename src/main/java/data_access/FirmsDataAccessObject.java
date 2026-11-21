@@ -9,7 +9,7 @@ import use_case.nearby_fires.FireDataAccessInterface;
 import use_case.shared.DataUnavailableException;
 
 /**
- * Satellite fire detections from NASA FIRMS. Owner: Member C.
+ * Satellite fire detections from NASA FIRMS. Owner: Hamza.
  */
 public class FirmsDataAccessObject implements FireDataAccessInterface {
 
@@ -32,7 +32,7 @@ public class FirmsDataAccessObject implements FireDataAccessInterface {
         if (mapKey == null || mapKey.isBlank()) {
             throw new DataUnavailableException("No FIRMS key: add firms.map.key to config.properties");
         }
-        // TODO Member C: build the area URL (near-real-time source for recent days, standard source
+        // TODO Hamza: build the area URL (near-real-time source for recent days, standard source
         //  for past dates), fetch with OkHttp, return parser.parse(body)
         throw new DataUnavailableException("Fire detections are not implemented yet");
     }

@@ -10,7 +10,7 @@ import use_case.compare_imagery.CompareImageryDataAccessInterface;
 
 /**
  * Decorator: saves each picture to disk the first time and reuses it afterwards,
- * so repeated views are fast and work offline. Owner: Member D.
+ * so repeated views are fast and work offline. Owner: Youssef.
  */
 public class CachingImageryDataAccessObject implements CompareImageryDataAccessInterface {
 
@@ -30,7 +30,7 @@ public class CachingImageryDataAccessObject implements CompareImageryDataAccessI
 
     @Override
     public SatelliteImage getImage(BoundingBox area, ImageType type, LocalDate date, int width, int height) {
-        // TODO Member D: build a file name from type, date, area and size; load the PNG if it exists,
+        // TODO Youssef: build a file name from type, date, area and size; load the PNG if it exists,
         //  otherwise call source.getImage(...) and save it
         return source.getImage(area, type, date, width, height);
     }

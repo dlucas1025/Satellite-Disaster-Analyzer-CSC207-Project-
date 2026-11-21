@@ -8,7 +8,7 @@ import entity.FireDetection;
 import use_case.shared.DataUnavailableException;
 
 /**
- * Satellite fire detections. Owner: Member C.
+ * Satellite fire detections. Owner: Hamza.
  */
 public interface FireDataAccessInterface {
 

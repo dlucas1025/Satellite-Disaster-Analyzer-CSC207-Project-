@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Everything the wildfire screen shows, already formatted. Owner: Member C.
+ * Everything the wildfire screen shows, already formatted. Owner: Hamza.
  */
 public class NearbyFiresState {
 

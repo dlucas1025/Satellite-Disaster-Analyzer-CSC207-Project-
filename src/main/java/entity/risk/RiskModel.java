@@ -8,8 +8,8 @@ import entity.RiskAssessment;
 /**
  * A set of rules that rates one hazard (Strategy pattern).
  *
- * <p>Shared contract. Member B writes {@code FloodRiskModel implements RiskModel<FloodConditions>}
- * and Member C writes {@code WildfireRiskModel implements RiskModel<FireConditions>}, each with
+ * <p>Shared contract. Lucas writes {@code FloodRiskModel implements RiskModel<FloodConditions>}
+ * and Hamza writes {@code WildfireRiskModel implements RiskModel<FireConditions>}, each with
  * their own conditions class in this package. A new hazard or a better rule is a new class;
  * no interactor changes (Open/Closed).</p>
  *

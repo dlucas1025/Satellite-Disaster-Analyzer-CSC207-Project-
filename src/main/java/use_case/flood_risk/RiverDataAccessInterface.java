@@ -12,7 +12,7 @@ import entity.RiverGauge;
 import use_case.shared.DataUnavailableException;
 
 /**
- * River flow and gauge data. Owner: Member B.
+ * River flow and gauge data. Owner: Lucas.
  */
 public interface RiverDataAccessInterface {
 

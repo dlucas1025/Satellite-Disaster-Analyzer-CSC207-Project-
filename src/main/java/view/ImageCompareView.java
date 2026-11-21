@@ -20,7 +20,7 @@ import interface_adapter.compare_imagery.CompareImageryController;
 import interface_adapter.compare_imagery.CompareImageryState;
 
 /**
- * Two satellite pictures side by side with the affected share of land. Owner: Member D.
+ * Two satellite pictures side by side with the affected share of land. Owner: Youssef.
  */
 public class ImageCompareView extends JPanel implements PropertyChangeListener {
 
@@ -64,7 +64,7 @@ public class ImageCompareView extends JPanel implements PropertyChangeListener {
         add(pictures, BorderLayout.CENTER);
         add(summaryLabel, BorderLayout.SOUTH);
 
-        // TODO Member D: validate the dates and show an error instead of throwing; run in a SwingWorker
+        // TODO Youssef: validate the dates and show an error instead of throwing; run in a SwingWorker
         compareButton.addActionListener(event -> {
             if (controller != null && communityBox.getSelectedItem() != null) {
                 controller.execute((String) communityBox.getSelectedItem(), (String) hazardBox.getSelectedItem(),
@@ -92,7 +92,7 @@ public class ImageCompareView extends JPanel implements PropertyChangeListener {
     public void propertyChange(PropertyChangeEvent event) {
         SwingUtilities.invokeLater(() -> {
             final CompareImageryState state = viewModel.getState();
-            // TODO Member D: turn the pixel arrays into BufferedImages and show them as ImageIcons,
+            // TODO Youssef: turn the pixel arrays into BufferedImages and show them as ImageIcons,
             //  with the community marked; captions under each picture
             beforeLabel.setText(state.getBeforeCaption().isEmpty() ? "Before" : state.getBeforeCaption());
             afterLabel.setText(state.getAfterCaption().isEmpty() ? "After" : state.getAfterCaption());

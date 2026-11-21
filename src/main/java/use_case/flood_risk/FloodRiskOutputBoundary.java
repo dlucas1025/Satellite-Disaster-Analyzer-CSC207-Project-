@@ -1,7 +1,7 @@
 package use_case.flood_risk;
 
 /**
- * How the flood interactor reports results. Owner: Member B.
+ * How the flood interactor reports results. Owner: Lucas.
  */
 public interface FloodRiskOutputBoundary {
 

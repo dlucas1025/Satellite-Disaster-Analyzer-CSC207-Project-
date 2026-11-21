@@ -7,7 +7,7 @@ import use_case.save_community.WatchlistDataAccessInterface;
 import use_case.shared.DataUnavailableException;
 
 /**
- * Keeps watchlists in a JSON file on this computer. Owner: Member A.
+ * Keeps watchlists in a JSON file on this computer. Owner: Shreyas.
  */
 public class FileWatchlistDataAccessObject implements WatchlistDataAccessInterface {
 
@@ -24,13 +24,13 @@ public class FileWatchlistDataAccessObject implements WatchlistDataAccessInterfa
 
     @Override
     public Watchlist load(String owner) {
-        // TODO Member A: return an empty Watchlist if the file does not exist yet
+        // TODO Shreyas: return an empty Watchlist if the file does not exist yet
         throw new DataUnavailableException("Cannot read " + file + ": not implemented yet");
     }
 
     @Override
     public void save(Watchlist watchlist) {
-        // TODO Member A: create parent folders, write JSON
+        // TODO Shreyas: create parent folders, write JSON
         throw new DataUnavailableException("Cannot write " + file + ": not implemented yet");
     }
 }

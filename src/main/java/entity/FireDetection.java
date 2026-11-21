@@ -3,7 +3,7 @@ package entity;
 import java.time.LocalDateTime;
 
 /**
- * One fire hot spot seen from a satellite. Owner: Member C.
+ * One fire hot spot seen from a satellite. Owner: Hamza.
  *
  * @param latitude          degrees north
  * @param longitude         degrees east

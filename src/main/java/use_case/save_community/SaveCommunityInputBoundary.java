@@ -1,7 +1,7 @@
 package use_case.save_community;
 
 /**
- * The actions the watchlist screen can ask for. Owner: Member A.
+ * The actions the watchlist screen can ask for. Owner: Shreyas.
  */
 public interface SaveCommunityInputBoundary {
 

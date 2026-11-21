@@ -6,7 +6,7 @@ import entity.Community;
 import entity.RiskAssessment;
 
 /**
- * Wildfire rules (Strategy). Owner: Member C.
+ * Wildfire rules (Strategy). Owner: Hamza.
  *
  * <p>Starting points, to tune and document in the README:</p>
  * <ul>
@@ -20,8 +20,8 @@ public class WildfireRiskModel implements RiskModel<FireConditions> {
 
     @Override
     public RiskAssessment assess(Community community, FireConditions conditions, LocalDate day) {
-        // TODO Member C: use community.bearingTo(fire) and conditions.windFromDeg() for the wind rule;
+        // TODO Hamza: use community.bearingTo(fire) and conditions.windFromDeg() for the wind rule;
         //  return new RiskAssessment(community, Hazard.WILDFIRE, day, factors)
-        throw new UnsupportedOperationException("TODO Member C: WildfireRiskModel.assess");
+        throw new UnsupportedOperationException("TODO Hamza: WildfireRiskModel.assess");
     }
 }

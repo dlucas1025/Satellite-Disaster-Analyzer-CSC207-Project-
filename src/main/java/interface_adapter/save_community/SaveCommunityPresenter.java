@@ -5,7 +5,7 @@ import use_case.save_community.SaveCommunityOutputBoundary;
 import use_case.save_community.SaveCommunityOutputData;
 
 /**
- * Puts watchlist results into the view model. Owner: Member A.
+ * Puts watchlist results into the view model. Owner: Shreyas.
  */
 public class SaveCommunityPresenter implements SaveCommunityOutputBoundary {
 
@@ -25,7 +25,7 @@ public class SaveCommunityPresenter implements SaveCommunityOutputBoundary {
         final SaveCommunityState state = viewModel.getState();
         state.setSearchResults(output.searchResults());
         state.setError("");
-        // TODO Member A: format "name, province" labels if the view needs them
+        // TODO Shreyas: format "name, province" labels if the view needs them
         viewModel.firePropertyChange();
     }
 

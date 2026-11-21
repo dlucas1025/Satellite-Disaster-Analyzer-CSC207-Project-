@@ -1,7 +1,7 @@
 package use_case.flood_risk;
 
 /**
- * Entry point for story 2. Owner: Member B.
+ * Entry point for story 2. Owner: Lucas.
  */
 public interface FloodRiskInputBoundary {
 

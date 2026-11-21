@@ -6,7 +6,7 @@ import entity.Community;
 import entity.RiskAssessment;
 
 /**
- * Flood rules (Strategy). Owner: Member B.
+ * Flood rules (Strategy). Owner: Lucas.
  *
  * <p>Starting points, to tune and document in the README:</p>
  * <ul>
@@ -20,8 +20,8 @@ public class FloodRiskModel implements RiskModel<FloodConditions> {
 
     @Override
     public RiskAssessment assess(Community community, FloodConditions conditions, LocalDate day) {
-        // TODO Member B: build a List<RiskFactor> from the rules above, then
+        // TODO Lucas: build a List<RiskFactor> from the rules above, then
         //  return new RiskAssessment(community, Hazard.FLOOD, day, factors)
-        throw new UnsupportedOperationException("TODO Member B: FloodRiskModel.assess");
+        throw new UnsupportedOperationException("TODO Lucas: FloodRiskModel.assess");
     }
 }

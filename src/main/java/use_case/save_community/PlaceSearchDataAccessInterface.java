@@ -6,7 +6,7 @@ import entity.Community;
 import use_case.shared.DataUnavailableException;
 
 /**
- * Finds places by name. Owner: Member A.
+ * Finds places by name. Owner: Shreyas.
  */
 public interface PlaceSearchDataAccessInterface {
 

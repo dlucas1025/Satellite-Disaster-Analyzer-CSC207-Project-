@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Tests for story 4. Owner: Member D.
+ * Tests for story 4. Owner: Youssef.
  *
  * <p>Use a fake CompareImageryDataAccessInterface that returns tiny hand-made pixel arrays
  * (e.g. 4x4 with 2 water pixels), DemoCommunityProvider and a recording presenter. Test the
@@ -14,17 +14,17 @@ import org.junit.jupiter.api.Test;
 class CompareImageryInteractorTest {
 
     @Test
-    @Disabled("TODO Member D")
+    @Disabled("TODO Youssef")
     void reportsAffectedShareForBothDates() {
     }
 
     @Test
-    @Disabled("TODO Member D")
+    @Disabled("TODO Youssef")
     void cloudyPictureIsFlaggedUnreliable() {
     }
 
     @Test
-    @Disabled("TODO Member D")
+    @Disabled("TODO Youssef")
     void missingPictureShowsError() {
     }
 }

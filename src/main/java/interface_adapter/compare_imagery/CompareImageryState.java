@@ -1,7 +1,7 @@
 package interface_adapter.compare_imagery;
 
 /**
- * Everything the satellite comparison screen shows. Owner: Member D.
+ * Everything the satellite comparison screen shows. Owner: Youssef.
  */
 public class CompareImageryState {
 

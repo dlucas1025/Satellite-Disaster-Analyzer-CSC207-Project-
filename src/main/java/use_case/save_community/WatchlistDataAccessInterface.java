@@ -4,7 +4,7 @@ import entity.Watchlist;
 import use_case.shared.DataUnavailableException;
 
 /**
- * Loads and saves a user's watchlist. Owner: Member A.
+ * Loads and saves a user's watchlist. Owner: Shreyas.
  *
  * <p>Implemented by the file store, the cloud store and the fallback decorator,
  * so the interactor never knows where the watchlist lives (Dependency Inversion).</p>

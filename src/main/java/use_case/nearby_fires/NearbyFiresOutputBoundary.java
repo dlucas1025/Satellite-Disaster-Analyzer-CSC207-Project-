@@ -1,7 +1,7 @@
 package use_case.nearby_fires;
 
 /**
- * How the wildfire interactor reports results. Owner: Member C.
+ * How the wildfire interactor reports results. Owner: Hamza.
  */
 public interface NearbyFiresOutputBoundary {
 

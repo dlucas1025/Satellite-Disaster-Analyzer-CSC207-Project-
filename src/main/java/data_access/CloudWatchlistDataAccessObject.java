@@ -6,7 +6,7 @@ import use_case.shared.DataUnavailableException;
 
 /**
  * Keeps watchlists on the course's user-data server so they follow the user
- * to another computer. Owner: Member A.
+ * to another computer. Owner: Shreyas.
  */
 public class CloudWatchlistDataAccessObject implements WatchlistDataAccessInterface {
 
@@ -23,13 +23,13 @@ public class CloudWatchlistDataAccessObject implements WatchlistDataAccessInterf
 
     @Override
     public Watchlist load(String owner) {
-        // TODO Member A: GET the user's info JSON, read the watchlist from it
+        // TODO Shreyas: GET the user's info JSON, read the watchlist from it
         throw new DataUnavailableException("Cloud watchlist is not implemented yet (" + baseUrl + ")");
     }
 
     @Override
     public void save(Watchlist watchlist) {
-        // TODO Member A: PUT the watchlist JSON into the user's info
+        // TODO Shreyas: PUT the watchlist JSON into the user's info
         throw new DataUnavailableException("Cloud watchlist is not implemented yet (" + baseUrl + ")");
     }
 }

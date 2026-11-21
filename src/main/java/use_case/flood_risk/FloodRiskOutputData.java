@@ -5,7 +5,7 @@ import java.util.List;
 import entity.RiskAssessment;
 
 /**
- * The 7-day flood rating. Owner: Member B.
+ * The 7-day flood rating. Owner: Lucas.
  *
  * @param communityName  for the heading
  * @param dailyRatings   one assessment per day, in date order

@@ -6,7 +6,7 @@ import java.util.List;
 import entity.Community;
 
 /**
- * Everything the watchlist screen shows. Owner: Member A.
+ * Everything the watchlist screen shows. Owner: Shreyas.
  */
 public class SaveCommunityState {
 

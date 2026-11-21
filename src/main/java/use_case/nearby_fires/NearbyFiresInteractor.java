@@ -8,7 +8,7 @@ import entity.risk.RiskModel;
 import use_case.shared.CommunityProvider;
 
 /**
- * Finds nearby fires, the wind direction and the threat rating. Owner: Member C.
+ * Finds nearby fires, the wind direction and the threat rating. Owner: Hamza.
  */
 public class NearbyFiresInteractor implements NearbyFiresInputBoundary {
 
@@ -44,7 +44,7 @@ public class NearbyFiresInteractor implements NearbyFiresInputBoundary {
             presenter.prepareFailView("Unknown community: " + input.communityId());
             return;
         }
-        // TODO Member C:
+        // TODO Hamza:
         //  1. area = community.areaAround(radius); fires = fireData.findFires(...)
         //  2. keep only fires within radiusKm (the box corners are further than the radius)
         //  3. nearest fire distance and bearing; wind = windData.getWindFromDegrees(...)

@@ -5,7 +5,7 @@ import java.util.List;
 import entity.Community;
 
 /**
- * What the watchlist interactor hands to the presenter. Owner: Member A.
+ * What the watchlist interactor hands to the presenter. Owner: Shreyas.
  *
  * @param searchResults places matching the last search (may be empty)
  * @param watchlist     the saved communities after the action

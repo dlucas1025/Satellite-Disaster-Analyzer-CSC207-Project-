@@ -8,7 +8,7 @@ import entity.Community;
 /**
  * Where the other stories get the user's communities from.
  *
- * <p>Shared contract that keeps stories 2-4 independent of story 1. Until Member A's
+ * <p>Shared contract that keeps stories 2-4 independent of story 1. Until Shreyas's
  * watchlist is merged, {@code AppBuilder} supplies {@code data_access.DemoCommunityProvider}
  * (Peguis First Nation and Jasper). When it is merged, A's watchlist data access object
  * also implements this interface and one line in {@code AppBuilder} switches over

@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Interactor tests for story 1. Owner: Member A.
+ * Interactor tests for story 1. Owner: Shreyas.
  *
  * <p>Write small fakes here: an in-memory WatchlistDataAccessInterface, a
  * PlaceSearchDataAccessInterface returning fixed places (or throwing
@@ -13,17 +13,17 @@ import org.junit.jupiter.api.Test;
 class SaveCommunityInteractorTest {
 
     @Test
-    @Disabled("TODO Member A")
+    @Disabled("TODO Shreyas")
     void saveAddsCommunityToWatchlist() {
     }
 
     @Test
-    @Disabled("TODO Member A")
+    @Disabled("TODO Shreyas")
     void savingTwiceDoesNotDuplicate() {
     }
 
     @Test
-    @Disabled("TODO Member A")
+    @Disabled("TODO Shreyas")
     void searchFailureShowsErrorAndKeepsWatchlist() {
     }
 }

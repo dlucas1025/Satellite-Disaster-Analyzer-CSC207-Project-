@@ -8,13 +8,13 @@ import use_case.flood_risk.FloodWeatherDataAccessInterface;
 import use_case.shared.DataUnavailableException;
 
 /**
- * Rain, snow and temperature from an online weather service. Owner: Member B.
+ * Rain, snow and temperature from an online weather service. Owner: Lucas.
  */
 public class FloodWeatherDataAccessObject implements FloodWeatherDataAccessInterface {
 
     @Override
     public WeatherOutlook getWeather(Community community, LocalDate from, int days) {
-        // TODO Member B: forecast API for today, historical weather API for past dates
+        // TODO Lucas: forecast API for today, historical weather API for past dates
         throw new DataUnavailableException("Weather is not implemented yet");
     }
 }

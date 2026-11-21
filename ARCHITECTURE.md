@@ -2,7 +2,7 @@
 
 A working outline for the team. **Every class below already exists as a stub** that compiles
 and is wired into `AppBuilder`; the app runs and each tab shows "not implemented yet".
-Search the code for `TODO Member A` (B, C, D) to find your work, and tick a box when that
+Search the code for `TODO Shreyas` (or Lucas, Hamza, Youssef) to find your work, and tick a box when that
 class is fully implemented and tested.
 
 ## 1. The layers
@@ -84,7 +84,7 @@ Steps 1–3 depend only on the shared contract, so all four members can start th
 
 ## 5. Member outlines
 
-### Member A — Story 1: Watchlist
+### Shreyas — Story 1: Watchlist
 
 | Layer | Class | Notes |
 |---|---|---|
@@ -104,7 +104,7 @@ Steps 1–3 depend only on the shared contract, so all four members can start th
 
 Design to present: Dependency Inversion (file vs cloud store), Decorator (offline fallback), Interface Segregation.
 
-### Member B — Story 2: Flood risk
+### Lucas — Story 2: Flood risk
 
 | Layer | Class | Notes |
 |---|---|---|
@@ -122,7 +122,7 @@ Design to present: Dependency Inversion (file vs cloud store), Decorator (offlin
 
 Design to present: Strategy + Open/Closed (`RiskModel`).
 
-### Member C — Story 3: Nearby wildfires
+### Hamza — Story 3: Nearby wildfires
 
 | Layer | Class | Notes |
 |---|---|---|
@@ -133,13 +133,13 @@ Design to present: Strategy + Open/Closed (`RiskModel`).
 | | [x] `FireDataAccessInterface`, `WindDataAccessInterface` | |
 | Adapter | [x] `NearbyFiresController`, `NearbyFiresState` · [ ] `NearbyFiresPresenter` | |
 | Data access | [ ] `FirmsDataAccessObject`, `FirmsCsvParser` | key from `config.properties` |
-| | [ ] `WindDataAccessObject` | own class; not shared with B |
+| | [ ] `WindDataAccessObject` | own class; not shared with Lucas |
 | View | [ ] `view.FireMapView`, `view.MapPanel` | map picture, fire markers, wind arrow |
 | Tests | [ ] `WildfireRiskModelTest`, `NearbyFiresInteractorTest`, `FirmsCsvParserTest` | |
 
 Design to present: Single Responsibility (fetch / parse / score / present / draw are separate).
 
-### Member D — Story 4: Compare satellite pictures
+### Youssef — Story 4: Compare satellite pictures
 
 | Layer | Class | Notes |
 |---|---|---|
@@ -157,9 +157,9 @@ Design to present: Decorator (cache), Strategy (water vs burn classifier), Lisko
 
 ## 6. Integration (last week)
 
-- [ ] Switch `AppBuilder.communityProvider` to Member A's watchlist and refresh drop-downs when it changes
-- [ ] Optional: merge B's and C's weather classes into one (a planned refactor to show)
-- [ ] Optional: let D reuse C's `MapPanel` to mark the community on pictures
+- [ ] Switch `AppBuilder.communityProvider` to Shreyas's watchlist and refresh drop-downs when it changes
+- [ ] Optional: merge Lucas's and Hamza's weather classes into one (a planned refactor to show)
+- [ ] Optional: let Youssef reuse Hamza's `MapPanel` to mark the community on pictures
 - [ ] Delete `view.PlaceholderView` (no longer used)
 - [ ] PlantUML sequence diagram per story in `plantuml/`
 - [ ] Checkstyle warnings to zero, then set `failOnViolation` to true

@@ -7,7 +7,7 @@ import entity.WeatherOutlook;
 import use_case.shared.DataUnavailableException;
 
 /**
- * Rain, snow and temperature for the flood rules. Owner: Member B.
+ * Rain, snow and temperature for the flood rules. Owner: Lucas.
  */
 public interface FloodWeatherDataAccessInterface {
 

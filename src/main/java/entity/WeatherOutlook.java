@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 /**
- * Daily weather around a community, forecast or historical. Owner: Member B.
+ * Daily weather around a community, forecast or historical. Owner: Lucas.
  *
  * @param firstDay        date of the first value
  * @param precipitationMm rain and melted snow per day
@@ -21,8 +21,8 @@ public record WeatherOutlook(LocalDate firstDay, List<Double> precipitationMm,
      * @return millimetres
      */
     public double maxRainOver(int days) {
-        // TODO Member B
-        throw new UnsupportedOperationException("TODO Member B: WeatherOutlook.maxRainOver");
+        // TODO Lucas
+        throw new UnsupportedOperationException("TODO Lucas: WeatherOutlook.maxRainOver");
     }
 
     /**
@@ -32,7 +32,7 @@ public record WeatherOutlook(LocalDate firstDay, List<Double> precipitationMm,
      * @return the number of days above the threshold
      */
     public int warmDays(double thresholdC) {
-        // TODO Member B
-        throw new UnsupportedOperationException("TODO Member B: WeatherOutlook.warmDays");
+        // TODO Lucas
+        throw new UnsupportedOperationException("TODO Lucas: WeatherOutlook.warmDays");
     }
 }

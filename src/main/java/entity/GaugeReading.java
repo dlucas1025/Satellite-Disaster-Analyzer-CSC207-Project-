@@ -3,7 +3,7 @@ package entity;
 import java.time.LocalDateTime;
 
 /**
- * One measurement from a river gauge. Owner: Member B.
+ * One measurement from a river gauge. Owner: Lucas.
  *
  * @param stationId    the gauge
  * @param time         when it was measured

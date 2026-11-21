@@ -5,7 +5,7 @@ import use_case.save_community.SaveCommunityInputBoundary;
 import use_case.save_community.SaveCommunityInputData;
 
 /**
- * Turns watchlist screen actions into use case calls. Owner: Member A.
+ * Turns watchlist screen actions into use case calls. Owner: Shreyas.
  */
 public class SaveCommunityController {
 
@@ -16,7 +16,7 @@ public class SaveCommunityController {
      * Creates the controller.
      *
      * @param interactor the use case
-     * @param owner      the signed-in user (TODO Member A: real sign-in)
+     * @param owner      the signed-in user (TODO Shreyas: real sign-in)
      */
     public SaveCommunityController(SaveCommunityInputBoundary interactor, String owner) {
         this.interactor = interactor;

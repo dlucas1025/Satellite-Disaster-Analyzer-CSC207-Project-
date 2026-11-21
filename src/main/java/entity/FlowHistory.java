@@ -5,7 +5,7 @@ import java.util.Map;
 
 /**
  * Past daily river flows at one place, grouped by day of the year,
- * used to tell what is "usual" for this time of year. Owner: Member B.
+ * used to tell what is "usual" for this time of year. Owner: Lucas.
  *
  * @param flowsByDayOfYear for each day of the year (1-366), the flows seen on that day in past years
  */
@@ -19,8 +19,8 @@ public record FlowHistory(Map<Integer, List<Double>> flowsByDayOfYear) {
      * @return a percentile from 0 to 100
      */
     public double percentileOf(int dayOfYear, double flowM3s) {
-        // TODO Member B: consider a window of a few days around dayOfYear for more samples
-        throw new UnsupportedOperationException("TODO Member B: FlowHistory.percentileOf");
+        // TODO Lucas: consider a window of a few days around dayOfYear for more samples
+        throw new UnsupportedOperationException("TODO Lucas: FlowHistory.percentileOf");
     }
 
     /**
@@ -30,7 +30,7 @@ public record FlowHistory(Map<Integer, List<Double>> flowsByDayOfYear) {
      * @return the median past flow in m3/s
      */
     public double median(int dayOfYear) {
-        // TODO Member B
-        throw new UnsupportedOperationException("TODO Member B: FlowHistory.median");
+        // TODO Lucas
+        throw new UnsupportedOperationException("TODO Lucas: FlowHistory.median");
     }
 }

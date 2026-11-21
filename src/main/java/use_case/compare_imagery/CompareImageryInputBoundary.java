@@ -1,7 +1,7 @@
 package use_case.compare_imagery;
 
 /**
- * Entry point for story 4. Owner: Member D.
+ * Entry point for story 4. Owner: Youssef.
  */
 public interface CompareImageryInputBoundary {
 

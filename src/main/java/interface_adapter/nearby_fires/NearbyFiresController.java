@@ -6,7 +6,7 @@ import use_case.nearby_fires.NearbyFiresInputBoundary;
 import use_case.nearby_fires.NearbyFiresInputData;
 
 /**
- * Turns the Check button into a use case call. Owner: Member C.
+ * Turns the Check button into a use case call. Owner: Hamza.
  */
 public class NearbyFiresController {
 

@@ -1,8 +1,8 @@
 /**
- * Story 1: Save communities to a watchlist. Owner: Member A.
+ * Story 1: Save communities to a watchlist. Owner: Shreyas.
  *
  * <p>Two narrow data access interfaces (Interface Segregation): {@link PlaceSearchDataAccessInterface}
- * for searching and {@link WatchlistDataAccessInterface} for storage. Search for "TODO Member A"
+ * for searching and {@link WatchlistDataAccessInterface} for storage. Search for "TODO Shreyas"
  * to find everything left to write; ARCHITECTURE.md has the full checklist.</p>
  */
 package use_case.save_community;

@@ -13,31 +13,31 @@ import use_case.flood_risk.RiverDataAccessInterface;
 import use_case.shared.DataUnavailableException;
 
 /**
- * River flow forecasts, flow history and river gauges from online services. Owner: Member B.
+ * River flow forecasts, flow history and river gauges from online services. Owner: Lucas.
  */
 public class HydrologyDataAccessObject implements RiverDataAccessInterface {
 
     @Override
     public FlowForecast getFlowForecast(double latitude, double longitude, LocalDate from, int days) {
-        // TODO Member B: flood forecast API (daily river discharge)
+        // TODO Lucas: flood forecast API (daily river discharge)
         throw new DataUnavailableException("River flow forecast is not implemented yet");
     }
 
     @Override
     public FlowHistory getFlowHistory(double latitude, double longitude) {
-        // TODO Member B: flood API history back to 1984; cache to ~/.northwatch/cache/flow/
+        // TODO Lucas: flood API history back to 1984; cache to ~/.northwatch/cache/flow/
         throw new DataUnavailableException("River flow history is not implemented yet");
     }
 
     @Override
     public Optional<RiverGauge> findNearestGauge(Community community, double maxKm) {
-        // TODO Member B: Water Survey of Canada stations in community.areaAround(maxKm), pick the closest
+        // TODO Lucas: Water Survey of Canada stations in community.areaAround(maxKm), pick the closest
         return Optional.empty();
     }
 
     @Override
     public List<GaugeReading> getRecentReadings(RiverGauge gauge, LocalDate upTo) {
-        // TODO Member B: real-time (last ~30 days) or historical daily means for older dates
+        // TODO Lucas: real-time (last ~30 days) or historical daily means for older dates
         throw new DataUnavailableException("Gauge readings are not implemented yet");
     }
 }

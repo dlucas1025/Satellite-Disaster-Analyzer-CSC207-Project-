@@ -1,7 +1,7 @@
 package entity;
 
 /**
- * A river measuring station. Owner: Member B.
+ * A river measuring station. Owner: Lucas.
  *
  * @param stationId the official station id, e.g. "05SD005"
  * @param name      e.g. "Fisher River near Fisherton"

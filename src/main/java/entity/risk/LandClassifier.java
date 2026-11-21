@@ -3,7 +3,7 @@ package entity.risk;
 import entity.ImageType;
 
 /**
- * Decides which pixels of a satellite picture show affected land (Strategy). Owner: Member D.
+ * Decides which pixels of a satellite picture show affected land (Strategy). Owner: Youssef.
  * A new hazard or picture type is a new class; the interactor does not change.
  */
 public interface LandClassifier {

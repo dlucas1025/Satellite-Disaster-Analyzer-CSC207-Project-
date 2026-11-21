@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Tests for story 2. Owner: Member B.
+ * Tests for story 2. Owner: Lucas.
  *
  * <p>Use fakes for RiverDataAccessInterface and FloodWeatherDataAccessInterface that return
  * hand-made forecasts, plus DemoCommunityProvider and a recording presenter. Test
@@ -13,17 +13,17 @@ import org.junit.jupiter.api.Test;
 class FloodRiskInteractorTest {
 
     @Test
-    @Disabled("TODO Member B")
+    @Disabled("TODO Lucas")
     void highFlowAndRainGiveHighRating() {
     }
 
     @Test
-    @Disabled("TODO Member B")
+    @Disabled("TODO Lucas")
     void noGaugeStillRatesAndSaysSo() {
     }
 
     @Test
-    @Disabled("TODO Member B")
+    @Disabled("TODO Lucas")
     void missingDataGivesCannotAssessNotLow() {
     }
 }

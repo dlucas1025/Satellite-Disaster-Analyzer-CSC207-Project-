@@ -6,7 +6,7 @@ import entity.Community;
 import use_case.shared.DataUnavailableException;
 
 /**
- * Wind direction for the wildfire rules. Owner: Member C.
+ * Wind direction for the wildfire rules. Owner: Hamza.
  */
 public interface WindDataAccessInterface {
 

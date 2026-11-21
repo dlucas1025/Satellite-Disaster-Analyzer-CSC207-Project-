@@ -21,7 +21,7 @@ import interface_adapter.save_community.SaveCommunityController;
 import interface_adapter.save_community.SaveCommunityState;
 
 /**
- * Search box, search results and the saved watchlist. Owner: Member A.
+ * Search box, search results and the saved watchlist. Owner: Shreyas.
  */
 public class WatchlistView extends JPanel implements PropertyChangeListener {
 
@@ -69,7 +69,7 @@ public class WatchlistView extends JPanel implements PropertyChangeListener {
         add(lists, BorderLayout.CENTER);
         add(messageLabel, BorderLayout.SOUTH);
 
-        // TODO Member A: run controller calls in a SwingWorker so the window never freezes;
+        // TODO Shreyas: run controller calls in a SwingWorker so the window never freezes;
         //  add rename and a custom renderer showing "name, province"
         searchButton.addActionListener(event -> {
             if (controller != null) {

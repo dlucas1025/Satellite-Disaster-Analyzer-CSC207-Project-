@@ -10,16 +10,16 @@ past events, and the watchlist is saved between sessions.
 
 ## User stories
 
-1. **[Member A]** As an emergency coordinator, I want to search for a community by name, pick the right one
+1. **[Shreyas]** As an emergency coordinator, I want to search for a community by name, pick the right one
    when several places share that name, and save it to a watchlist tied to my account, so that the places
    I am responsible for are there every time I open the app on any computer, even without internet.
-2. **[Member B]** As an emergency coordinator, I want to see a flood-risk rating (Low, Moderate, High or
+2. **[Lucas]** As an emergency coordinator, I want to see a flood-risk rating (Low, Moderate, High or
    Severe) for each of the next 7 days for a saved community, along with the reasons for it, so that I can
    decide whether to warn residents.
-3. **[Member C]** As a rural resident, I want to see active wildfires near my community on a map, how far
+3. **[Hamza]** As a rural resident, I want to see active wildfires near my community on a map, how far
    away the nearest one is, and whether the wind is blowing it toward us so that I know whether to prepare
    to leave.
-4. **[Member D]** As an emergency coordinator, I want to compare satellite pictures of my community from
+4. **[Youssef]** As an emergency coordinator, I want to compare satellite pictures of my community from
    before and after an event and see how much land was flooded or burned, so that I can tell how much of
    the area a flood or wildfire has affected.
 
@@ -41,7 +41,8 @@ past events, and the watchlist is saved between sessions.
 The code follows Clean Architecture with the same package names as the course's ca-login starter.
 Dependencies only point inward: `view` → `interface_adapter` → `use_case` → `entity`.
 `data_access` implements interfaces declared in `use_case`. `app.AppBuilder` is the only class that
-knows every concrete class. See **[ARCHITECTURE.md](ARCHITECTURE.md)** for the layer diagram,
+knows every concrete class. See **[TEAM_TASKS.md](TEAM_TASKS.md)** for each member's classes and what is left in each,
+and **[ARCHITECTURE.md](ARCHITECTURE.md)** for the layer diagram,
 the request flow and each member's class checklist, and `plantuml/architecture.puml`.
 
 ```
@@ -71,7 +72,7 @@ plantuml/              architecture diagram; add one sequence diagram per story
 | `entity.BoundingBox` | Lat/lon rectangle; converts coordinates to picture pixels. |
 | `entity.Hazard`, `entity.RiskLevel` | FLOOD / WILDFIRE; LOW–SEVERE from a 0–100 score. |
 | `entity.RiskFactor`, `entity.RiskAssessment` | A rating and the reasons behind it. |
-| `entity.risk.RiskModel<T>` | Strategy interface for hazard rules (B and C implement it). |
+| `entity.risk.RiskModel<T>` | Strategy interface for hazard rules (Lucas and Hamza implement it). |
 | `use_case.shared.CommunityProvider` | Where stories 2–4 get communities from. |
 | `use_case.shared.DataUnavailableException` | Thrown by data access when data can't be fetched; interactors turn it into a message. |
 | `data_access.DemoCommunityProvider` | Peguis First Nation and Jasper, used until the watchlist is ready. |
@@ -86,10 +87,10 @@ Each `use_case/<story>/package-info.java` lists the classes to write.
 
 | Story | Owner | Packages | Data | Design focus |
 |---|---|---|---|---|
-| 1 Watchlist | A | `use_case.save_community`, `interface_adapter.save_community`, `entity.Watchlist`, `view.WatchlistView` | Place search API; JSON file + course user-data API | Dependency Inversion (file vs cloud store), Decorator (offline fallback) |
-| 2 Flood risk | B | `use_case.flood_risk`, `interface_adapter.flood_risk`, `entity.risk.FloodRiskModel`, `view.FloodRiskView` | River-flow forecast/history, weather, river gauges | Strategy + Open/Closed (`RiskModel`) |
-| 3 Wildfires | C | `use_case.nearby_fires`, `interface_adapter.nearby_fires`, `entity.FireDetection`, `entity.risk.WildfireRiskModel`, `view.FireMapView` | Satellite fire detections, wind | Single Responsibility (fetch / parse / score / draw) |
-| 4 Satellite | D | `use_case.compare_imagery`, `interface_adapter.compare_imagery`, `entity.SatelliteImage`, `entity.risk.LandClassifier`, `view.ImageCompareView` | Satellite imagery | Decorator (image cache), Strategy (water vs burn classifier), Liskov |
+| 1 Watchlist | Shreyas | `use_case.save_community`, `interface_adapter.save_community`, `entity.Watchlist`, `view.WatchlistView` | Place search API; JSON file + course user-data API | Dependency Inversion (file vs cloud store), Decorator (offline fallback) |
+| 2 Flood risk | Lucas | `use_case.flood_risk`, `interface_adapter.flood_risk`, `entity.risk.FloodRiskModel`, `view.FloodRiskView` | River-flow forecast/history, weather, river gauges | Strategy + Open/Closed (`RiskModel`) |
+| 3 Wildfires | Hamza | `use_case.nearby_fires`, `interface_adapter.nearby_fires`, `entity.FireDetection`, `entity.risk.WildfireRiskModel`, `view.FireMapView` | Satellite fire detections, wind | Single Responsibility (fetch / parse / score / draw) |
+| 4 Satellite | Youssef | `use_case.compare_imagery`, `interface_adapter.compare_imagery`, `entity.SatelliteImage`, `entity.risk.LandClassifier`, `view.ImageCompareView` | Satellite imagery | Decorator (image cache), Strategy (water vs burn classifier), Liskov |
 
 ### Rules that keep everyone independent
 

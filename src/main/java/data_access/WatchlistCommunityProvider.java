@@ -9,7 +9,7 @@ import use_case.shared.CommunityProvider;
 
 /**
  * Adapter that lets stories 2-4 read the real watchlist through {@link CommunityProvider}.
- * Owner: Member A. Swap it in for DemoCommunityProvider in AppBuilder once the watchlist works.
+ * Owner: Shreyas. Swap it in for DemoCommunityProvider in AppBuilder once the watchlist works.
  */
 public class WatchlistCommunityProvider implements CommunityProvider {
 

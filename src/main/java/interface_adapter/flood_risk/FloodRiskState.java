@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Everything the flood risk screen shows, already formatted. Owner: Member B.
+ * Everything the flood risk screen shows, already formatted. Owner: Lucas.
  */
 public class FloodRiskState {
 

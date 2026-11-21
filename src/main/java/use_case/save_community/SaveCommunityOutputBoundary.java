@@ -1,7 +1,7 @@
 package use_case.save_community;
 
 /**
- * How the watchlist interactor reports results. Owner: Member A.
+ * How the watchlist interactor reports results. Owner: Shreyas.
  */
 public interface SaveCommunityOutputBoundary {
 

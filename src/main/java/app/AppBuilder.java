@@ -65,19 +65,19 @@ public class AppBuilder {
     private static final int WIDTH = 1100;
     private static final int HEIGHT = 750;
     private static final Path DATA_FOLDER = Path.of(System.getProperty("user.home"), ".northwatch");
-    /** The signed-in user. TODO Member A: replace with real sign-in. */
+    /** The signed-in user. TODO Shreyas: replace with real sign-in. */
     private static final String USER = "demo-user";
 
     private final JTabbedPane tabs = new JTabbedPane();
 
     /**
-     * Where stories 2-4 get communities from. Once Member A's watchlist works, switch this to
+     * Where stories 2-4 get communities from. Once Shreyas's watchlist works, switch this to
      * {@code new WatchlistCommunityProvider(watchlistStore, USER)} (Dependency Inversion: one line).
      */
     private final CommunityProvider communityProvider = new DemoCommunityProvider();
 
     // ------------------------------------------------------------------
-    // Story 1: Watchlist (Member A)
+    // Story 1: Watchlist (Shreyas)
     // ------------------------------------------------------------------
 
     private final ViewModel<SaveCommunityState> watchlistViewModel = new ViewModel<>("watchlist");
@@ -111,7 +111,7 @@ public class AppBuilder {
     }
 
     // ------------------------------------------------------------------
-    // Story 2: Flood risk (Member B)
+    // Story 2: Flood risk (Lucas)
     // ------------------------------------------------------------------
 
     private final ViewModel<FloodRiskState> floodRiskViewModel = new ViewModel<>("flood risk");
@@ -144,7 +144,7 @@ public class AppBuilder {
     }
 
     // ------------------------------------------------------------------
-    // Story 3: Nearby wildfires (Member C)
+    // Story 3: Nearby wildfires (Hamza)
     // ------------------------------------------------------------------
 
     private final ViewModel<NearbyFiresState> nearbyFiresViewModel = new ViewModel<>("nearby fires");
@@ -177,7 +177,7 @@ public class AppBuilder {
     }
 
     // ------------------------------------------------------------------
-    // Story 4: Compare satellite pictures (Member D)
+    // Story 4: Compare satellite pictures (Youssef)
     // ------------------------------------------------------------------
 
     private final ViewModel<CompareImageryState> compareImageryViewModel = new ViewModel<>("compare imagery");

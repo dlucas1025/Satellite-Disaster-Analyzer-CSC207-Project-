@@ -7,7 +7,7 @@ import entity.FireDetection;
 import entity.RiskAssessment;
 
 /**
- * Nearby fires and the threat rating. Owner: Member C.
+ * Nearby fires and the threat rating. Owner: Hamza.
  *
  * @param communityName     for the heading
  * @param area              the searched area, for drawing the map

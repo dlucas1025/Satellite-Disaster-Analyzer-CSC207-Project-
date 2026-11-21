@@ -5,7 +5,7 @@ import use_case.nearby_fires.NearbyFiresOutputBoundary;
 import use_case.nearby_fires.NearbyFiresOutputData;
 
 /**
- * Formats nearby fires for display. Owner: Member C.
+ * Formats nearby fires for display. Owner: Hamza.
  */
 public class NearbyFiresPresenter implements NearbyFiresOutputBoundary {
 
@@ -24,7 +24,7 @@ public class NearbyFiresPresenter implements NearbyFiresOutputBoundary {
     public void prepareSuccessView(NearbyFiresOutputData output) {
         final NearbyFiresState state = viewModel.getState();
         state.setError("");
-        // TODO Member C: summary like "12 fires, nearest 18 km NW"; level; reasons;
+        // TODO Hamza: summary like "12 fires, nearest 18 km NW"; level; reasons;
         //  fire points; wind; "No fires found" when the list is empty
         viewModel.firePropertyChange();
     }

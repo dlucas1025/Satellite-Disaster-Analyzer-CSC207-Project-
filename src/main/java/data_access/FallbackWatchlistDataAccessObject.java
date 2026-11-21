@@ -5,7 +5,7 @@ import use_case.save_community.WatchlistDataAccessInterface;
 
 /**
  * Decorator: uses the primary store (cloud) and falls back to the backup store (file)
- * when the primary is unreachable. Owner: Member A.
+ * when the primary is unreachable. Owner: Shreyas.
  */
 public class FallbackWatchlistDataAccessObject implements WatchlistDataAccessInterface {
 
@@ -26,13 +26,13 @@ public class FallbackWatchlistDataAccessObject implements WatchlistDataAccessInt
 
     @Override
     public Watchlist load(String owner) {
-        // TODO Member A: try primary; on DataUnavailableException use backup
+        // TODO Shreyas: try primary; on DataUnavailableException use backup
         return backup.load(owner);
     }
 
     @Override
     public void save(Watchlist watchlist) {
-        // TODO Member A: always save to backup; also try primary and remember to sync later if it fails
+        // TODO Shreyas: always save to backup; also try primary and remember to sync later if it fails
         backup.save(watchlist);
     }
 }

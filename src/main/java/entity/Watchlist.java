@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * The communities one user watches. Owner: Member A.
+ * The communities one user watches. Owner: Shreyas.
  */
 public class Watchlist {
 
@@ -37,8 +37,8 @@ public class Watchlist {
      * @return true if added, false if it was a duplicate
      */
     public boolean add(Community community) {
-        // TODO Member A
-        throw new UnsupportedOperationException("TODO Member A: Watchlist.add");
+        // TODO Shreyas
+        throw new UnsupportedOperationException("TODO Shreyas: Watchlist.add");
     }
 
     /**
@@ -48,8 +48,8 @@ public class Watchlist {
      * @return true if something was removed
      */
     public boolean remove(String communityId) {
-        // TODO Member A
-        throw new UnsupportedOperationException("TODO Member A: Watchlist.remove");
+        // TODO Shreyas
+        throw new UnsupportedOperationException("TODO Shreyas: Watchlist.remove");
     }
 
     /**
@@ -60,8 +60,8 @@ public class Watchlist {
      * @return true if the community was found and renamed
      */
     public boolean rename(String communityId, String newName) {
-        // TODO Member A: Community is a record, so replace it with a copy that has the new name
-        throw new UnsupportedOperationException("TODO Member A: Watchlist.rename");
+        // TODO Shreyas: Community is a record, so replace it with a copy that has the new name
+        throw new UnsupportedOperationException("TODO Shreyas: Watchlist.rename");
     }
 
     /**
@@ -71,7 +71,7 @@ public class Watchlist {
      * @return the community, or empty
      */
     public Optional<Community> find(String communityId) {
-        // TODO Member A
-        throw new UnsupportedOperationException("TODO Member A: Watchlist.find");
+        // TODO Shreyas
+        throw new UnsupportedOperationException("TODO Shreyas: Watchlist.find");
     }
 }

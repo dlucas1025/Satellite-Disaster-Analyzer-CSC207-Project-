@@ -3,7 +3,7 @@ package use_case.compare_imagery;
 import entity.SatelliteImage;
 
 /**
- * Two pictures and how much land was affected in each. Owner: Member D.
+ * Two pictures and how much land was affected in each. Owner: Youssef.
  *
  * @param communityName  for the heading
  * @param before         the earlier picture

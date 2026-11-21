@@ -5,7 +5,7 @@ import use_case.flood_risk.FloodRiskOutputBoundary;
 import use_case.flood_risk.FloodRiskOutputData;
 
 /**
- * Formats the flood rating for display. Owner: Member B.
+ * Formats the flood rating for display. Owner: Lucas.
  */
 public class FloodRiskPresenter implements FloodRiskOutputBoundary {
 
@@ -25,7 +25,7 @@ public class FloodRiskPresenter implements FloodRiskOutputBoundary {
         final FloodRiskState state = viewModel.getState();
         state.setHeading(output.communityName());
         state.setError("");
-        // TODO Member B: highest level -> overallLevel; one "Mon 2 May: HIGH" label per day;
+        // TODO Lucas: highest level -> overallLevel; one "Mon 2 May: HIGH" label per day;
         //  reasons from the highest day's factors; chart data; note if !output.usedGauge()
         viewModel.firePropertyChange();
     }

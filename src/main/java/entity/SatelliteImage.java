@@ -5,7 +5,7 @@ import java.time.LocalDate;
 import entity.risk.LandClassifier;
 
 /**
- * A satellite picture of an area on a date. Owner: Member D.
+ * A satellite picture of an area on a date. Owner: Youssef.
  *
  * <p>Holds raw ARGB pixel values rather than a java.awt BufferedImage so the entity
  * layer has no GUI imports; the view converts the pixels for display.</p>
@@ -77,8 +77,8 @@ public final class SatelliteImage {
      * @return a fraction from 0 to 1
      */
     public double affectedFraction(LandClassifier classifier) {
-        // TODO Member D: count classifier.isAffected over pixels that are not classifier.isUnusable
-        throw new UnsupportedOperationException("TODO Member D: SatelliteImage.affectedFraction");
+        // TODO Youssef: count classifier.isAffected over pixels that are not classifier.isUnusable
+        throw new UnsupportedOperationException("TODO Youssef: SatelliteImage.affectedFraction");
     }
 
     /**
@@ -88,7 +88,7 @@ public final class SatelliteImage {
      * @return a fraction from 0 to 1
      */
     public double unusableFraction(LandClassifier classifier) {
-        // TODO Member D
-        throw new UnsupportedOperationException("TODO Member D: SatelliteImage.unusableFraction");
+        // TODO Youssef
+        throw new UnsupportedOperationException("TODO Youssef: SatelliteImage.unusableFraction");
     }
 }

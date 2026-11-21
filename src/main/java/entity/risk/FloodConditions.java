@@ -8,7 +8,7 @@ import entity.GaugeReading;
 import entity.WeatherOutlook;
 
 /**
- * Everything the flood rules look at. Owner: Member B.
+ * Everything the flood rules look at. Owner: Lucas.
  *
  * @param forecast       forecast river flow
  * @param history        past flows for "usual for this time of year"

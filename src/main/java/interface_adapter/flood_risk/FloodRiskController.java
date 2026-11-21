@@ -6,7 +6,7 @@ import use_case.flood_risk.FloodRiskInputBoundary;
 import use_case.flood_risk.FloodRiskInputData;
 
 /**
- * Turns the Assess button into a use case call. Owner: Member B.
+ * Turns the Assess button into a use case call. Owner: Lucas.
  */
 public class FloodRiskController {
 

@@ -1,7 +1,7 @@
 package use_case.compare_imagery;
 
 /**
- * How the comparison interactor reports results. Owner: Member D.
+ * How the comparison interactor reports results. Owner: Youssef.
  */
 public interface CompareImageryOutputBoundary {
 

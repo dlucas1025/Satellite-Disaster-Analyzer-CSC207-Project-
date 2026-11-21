@@ -6,7 +6,7 @@ import entity.FireDetection;
 
 /**
  * Turns a FIRMS CSV response into fire detections (Single Responsibility:
- * fetching and parsing are separate classes). Owner: Member C.
+ * fetching and parsing are separate classes). Owner: Hamza.
  */
 public class FirmsCsvParser {
 
@@ -17,8 +17,8 @@ public class FirmsCsvParser {
      * @return one detection per data row
      */
     public List<FireDetection> parse(String csv) {
-        // TODO Member C: find columns by header name (latitude, longitude, acq_date, acq_time,
+        // TODO Hamza: find columns by header name (latitude, longitude, acq_date, acq_time,
         //  confidence, frp) rather than by position
-        throw new UnsupportedOperationException("TODO Member C: FirmsCsvParser.parse");
+        throw new UnsupportedOperationException("TODO Hamza: FirmsCsvParser.parse");
     }
 }

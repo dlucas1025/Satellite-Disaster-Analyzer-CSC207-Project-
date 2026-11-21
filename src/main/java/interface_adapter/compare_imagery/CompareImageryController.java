@@ -7,7 +7,7 @@ import use_case.compare_imagery.CompareImageryInputBoundary;
 import use_case.compare_imagery.CompareImageryInputData;
 
 /**
- * Turns the Compare button into a use case call. Owner: Member D.
+ * Turns the Compare button into a use case call. Owner: Youssef.
  */
 public class CompareImageryController {
 

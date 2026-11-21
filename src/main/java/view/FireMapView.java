@@ -21,7 +21,7 @@ import interface_adapter.nearby_fires.NearbyFiresController;
 import interface_adapter.nearby_fires.NearbyFiresState;
 
 /**
- * Map of nearby fires with the wind direction and threat rating. Owner: Member C.
+ * Map of nearby fires with the wind direction and threat rating. Owner: Hamza.
  */
 public class FireMapView extends JPanel implements PropertyChangeListener {
 
@@ -68,7 +68,7 @@ public class FireMapView extends JPanel implements PropertyChangeListener {
         add(mapPanel, BorderLayout.CENTER);
         add(side, BorderLayout.EAST);
 
-        // TODO Member C: run the controller in a SwingWorker
+        // TODO Hamza: run the controller in a SwingWorker
         checkButton.addActionListener(event -> {
             if (controller != null && communityBox.getSelectedItem() != null) {
                 controller.execute((String) communityBox.getSelectedItem(),
@@ -101,7 +101,7 @@ public class FireMapView extends JPanel implements PropertyChangeListener {
                     ? state.getSummary() + "  " + state.getLevel() : state.getError());
             reasonsModel.clear();
             state.getReasons().forEach(reasonsModel::addElement);
-            // TODO Member C: give mapPanel the background picture, area, fire points and wind
+            // TODO Hamza: give mapPanel the background picture, area, fire points and wind
             mapPanel.repaint();
         });
     }

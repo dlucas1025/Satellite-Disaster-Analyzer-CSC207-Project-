@@ -3,7 +3,7 @@ package use_case.save_community;
 import entity.Community;
 
 /**
- * What the user asked the watchlist to do. Owner: Member A.
+ * What the user asked the watchlist to do. Owner: Shreyas.
  * Use the static factory that matches the action; unused fields are null.
  *
  * @param owner       the user's name

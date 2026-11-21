@@ -8,7 +8,7 @@ import entity.SatelliteImage;
 import use_case.shared.DataUnavailableException;
 
 /**
- * Satellite pictures. Owner: Member D.
+ * Satellite pictures. Owner: Youssef.
  *
  * <p>Implemented by the online source and by the caching decorator that wraps it;
  * both must behave the same (Liskov), which a shared contract test checks.</p>
