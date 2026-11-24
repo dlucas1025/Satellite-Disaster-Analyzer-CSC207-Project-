@@ -106,7 +106,9 @@ public class AppBuilder {
                 new FileWatchlistDataAccessObject(DATA_FOLDER.resolve("watchlist.json")));
         final SaveCommunityInteractor interactor = new SaveCommunityInteractor(
                 new GeocodingDataAccessObject(), watchlistStore, new SaveCommunityPresenter(watchlistViewModel));
-        watchlistView.setController(new SaveCommunityController(interactor, USER));
+        final SaveCommunityController controller = new SaveCommunityController(interactor, USER);
+        watchlistView.setController(controller);
+        controller.load();
         return this;
     }
 
